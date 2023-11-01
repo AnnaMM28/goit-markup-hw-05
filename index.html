@@ -60,7 +60,9 @@
       <section class="catchphrase">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-button">Order Service</button>
+          <button data-modal-open type="button" class="order-button">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="values">
@@ -420,5 +422,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="modal-window is-hidden container">
+      <div class="modal-body">
+        <button data-modal-close type="button" class="close-button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
